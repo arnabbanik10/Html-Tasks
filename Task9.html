@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Frames Example</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outline{
+            border: 4px solid rgb(25, 78, 156);
+            display: flex;
+        }
+        .box{
+            min-width: 250px;
+            min-height: 250px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-  <frameset cols="50%, 50%">
-    <frame src="./frames/frame1.htm">
-    <frame src="./frames/frame2.htm">
-    <frameset rows="50%, 50%">
-      <frame src="./frames/frame3.htm">
-      <frame src="./frames/frame4.htm">
-    </frameset>
-  </frameset>
+    <div class="outline">
+        <div class="">
+            <div class="box">
+                <h1>Frame 1</h1>
+                <p>Contents of Frame 1</p>
+            </div>
+            <div class="box">
+                <h1>Frame 2</h1>
+                <p>Contents of Frame 2</p>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Frame 3</h1>
+            <p>Contents of Frame 3</p>
+        </div>
+        <div class="box">
+            <h1>Frame 4</h1>
+            <p>Contents of Frame 4</p>
+        </div>
+    </div>
 </body>
 </html>
